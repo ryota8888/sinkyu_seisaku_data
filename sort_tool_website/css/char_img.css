@@ -260,6 +260,12 @@
     background-size: contain;
 }
 
+.list_content_bg .isami_kaede {
+    background-image: url(../img/isami_kaede.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .list_content_bg .izayoi_nonomi {
     background-image: url(../img/izayoi_nonomi.png);
     background-repeat: no-repeat;
@@ -352,6 +358,18 @@
 
 .list_content_bg .kinugawa_kasumi {
     background-image: url(../img/kinugawa_kasumi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kirihuji_nagisa {
+    background-image: url(../img/kirihuji_nagisa.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .konoe_mina {
+    background-image: url(../img/konoe_mina.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -508,6 +526,12 @@
 
 .list_content_bg .murokasa_akane {
     background-image: url(../img/murokasa_akane.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .murokasa_akane_bunny {
+    background-image: url(../img/murokasa_akane_bunny.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
