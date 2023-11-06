@@ -1,10 +1,11 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Yusei+Magic&display=swap');
 
-.filter_modal{
+.filter_modal {
     display: block;
     position: relative;
 }
+
 .filter_modal_mask {
     position: fixed;
     top: 0;
@@ -13,9 +14,17 @@
     width: 100%;
     height: 100%;
 }
+
 .filter_box {
     background-color: white;
-    width: 80%;
-    height: 85%;
-    min-width: 900px;
+    width: 900px;
+    height: 700px;
+    border-radius: 20px;
+}
+
+.filter_box .header {
+    width: 100%;
+    height: 50px;
+    background-color: #B6DCFF;
+    border-radius: 20px 20px 0 0;
 }
