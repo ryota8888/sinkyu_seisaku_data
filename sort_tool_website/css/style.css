@@ -1,0 +1,175 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Yusei+Magic&display=swap');
+
+/* 共通設定用のcss*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Yusei Magic', sans-serif;
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    background-color: #d6ebfe;
+}
+
+/* サイトのヘッダ--------------------------------------- */
+header {
+    font-size: 30px;
+    background-color: #2a6398;
+    color: white;
+    padding-left: 40px;
+    padding-top: 7.5px;
+    padding-bottom: 20px;
+    line-height: 1;
+}
+
+header span {
+    font-size: 15px;
+}
+/* サイトのヘッダ最下部--------------------------------------- */
+
+/* naviとarticleにflex */
+.main_container {
+    display: flex;
+}
+
+/* naviバーの設定--------------------------------------- */
+.navi {
+    position: sticky;
+    top: 0;
+    /* left: 0; */
+
+    height: 100vh;
+    width: 70px;
+    background-color: #2a6398;
+    box-shadow: 10px 0 0 #edc834;
+    border-left: 10px solid #2a6398;
+
+    overflow-x: hidden;
+    transition: all 0.35s;
+}
+
+.navi:hover {
+    width: 250px;
+}
+
+.navi ul {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.navi ul li {
+    display: block;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+    /* background-color: black; */
+}
+
+.navi ul li:hover {
+    background-color: #18406660;
+}
+
+.navi ul li.active {
+    background-color: #edc834;
+}
+
+.navi ul li.active::before {
+    content: '';
+    position: absolute;
+    /* background-color: red; */
+    width: 30px;
+    height: 30px;
+    top: -30px;
+    right: 0;
+    border-radius: 50%;
+    /* ボックスシャドウで逆方向の丸みがかかっている(上側) */
+    box-shadow: 15px 15px 0 #edc834;
+}
+
+.navi ul li.active::after {
+    content: '';
+    position: absolute;
+    /* background-color: red; */
+    width: 30px;
+    height: 30px;
+    top: 60px;
+    right: 0;
+    border-radius: 50%;
+    /* ボックスシャドウで逆方向の丸みがかかっている(下側) */
+    box-shadow: 15px -15px 0 #edc834;
+}
+
+
+
+.navi ul li a {
+    position: relative;
+    display: flex;
+    color: white;
+    width: 100%;
+}
+
+.navi ul li a .icon {
+    display: block;
+    min-width: 45px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.navi ul li a .icon ion-icon {
+    font-size: 1.5rem;
+}
+
+.navi ul li .title {
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+/* naviバーの設定最下部--------------------------------------- */
+
+/* articleの設定--------------------------------------- */
+article {
+    position: relative;
+    height: 100%;
+    width: 900px;
+    margin: auto;
+
+    border-left: 10px solid #82afd9;
+    border-right: 10px solid #82afd9;
+    /* 仮枠線用後で消す */
+
+    padding: 0 40px;
+}
+
+article h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    background-color: #32618b;
+    margin-top: 40px;
+    padding: 10px 0 20px 0;
+}
+
+h1 .border {
+    padding: 0 20px;
+    border-bottom: 10px solid #ffe262;
+}
+
+footer {
+    text-align: center;
+    font-size: 12.5px;
+    color: white;
+    background-color: #343f49;
+    padding: 20px;
+}
+/* articleの設定最下部--------------------------------------- */
+

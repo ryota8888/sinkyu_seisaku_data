@@ -1,0 +1,958 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Yusei+Magic&display=swap');
+
+/* ア行 */
+.list_content_bg .aikiyo_huka {
+    background-image: url(../img/aikiyo_huka.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .aikiyo_huka_newyear {
+    background-image: url(../img/aikiyo_huka_newyear.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .ajitani_hihumi {
+    background-image: url(../img/ajitani_hihumi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .ajitani_hihumi_summer {
+    background-image: url(../img/ajitani_hihumi_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .akashi_junko {
+    background-image: url(../img/akashi_junko.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .akashi_junko_newyear {
+    background-image: url(../img/akashi_junko_newyear.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .akeboshi_himari {
+    background-image: url(../img/akeboshi_himari.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .akeshiro_rumi {
+    background-image: url(../img/akeshiro_rumi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .akiizumi_momiji {
+    background-image: url(../img/akiizumi_momiji.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .amami_nodoka {
+    background-image: url(../img/amami_nodoka.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .amami_nodoka_onsen {
+    background-image: url(../img/amami_nodoka_onsen.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .amau_ako {
+    background-image: url(../img/amau_ako.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .aomori_mine {
+    background-image: url(../img/aomori_mine.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .asagao_hanae {
+    background-image: url(../img/asagao_hanae.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .asagao_hanae_xmas {
+    background-image: url(../img/asagao_hanae_xmas.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .asagi_mutuki {
+    background-image: url(../img/asagi_mutuki.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .asagi_mutuki_newyear {
+    background-image: url(../img/asagi_mutuki_newyear.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .asahina_fina {
+    background-image: url(../img/asahina_fina.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .asuma_toki {
+    background-image: url(../img/asuma_toki.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .asuma_toki_bunny {
+    background-image: url(../img/asuma_toki_bunny.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .chidori_michiru {
+    background-image: url(../img/chidori_michiru.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .endo_shimiko {
+    background-image: url(../img/endo_shimiko.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .hakari_atuko {
+    background-image: url(../img/hakari_atuko.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .hanaoka_yuzu {
+    background-image: url(../img/hanaoka_yuzu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .hanaoka_yuzu_maid {
+    background-image: url(../img/hanaoka_yuzu_maid.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .hanekawa_hasumi {
+    background-image: url(../img/hanekawa_hasumi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .hanekawa_hasumi_taisohuku {
+    background-image: url(../img/hanekawa_hasumi_taisohuku.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .hatune_miku {
+    background-image: url(../img/hatune_miku.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .hayase_yuuka {
+    background-image: url(../img/hayase_yuuka.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .hayase_yuuka_taisohuku {
+    background-image: url(../img/hayase_yuuka_taisohuku.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .himeki_meru {
+    background-image: url(../img/himeki_meru.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .himuro_sena {
+    background-image: url(../img/himuro_sena.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .hinomiya_chinatu {
+    background-image: url(../img/hinomiya_chinatu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .hinomiya_chinatu_onsen {
+    background-image: url(../img/hinomiya_chinatu_onsen.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .ibaragi_yoshimi {
+    background-image: url(../img/ibaragi_yoshimi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .ichinose_asuna {
+    background-image: url(../img/ichinose_asuna.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .ichinose_asuna_bunny {
+    background-image: url(../img/ichinose_asuna_bunny.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .igusa_haruka {
+    background-image: url(../img/igusa_haruka.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .igusa_haruka_newyear {
+    background-image: url(../img/igusa_haruka_newyear.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .ikekura_marina {
+    background-image: url(../img/ikekura_marina.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .imashino_misaki {
+    background-image: url(../img/imashino_misaki.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .iochi_mari {
+    background-image: url(../img/iochi_mari.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .iochi_mari_taisohuku {
+    background-image: url(../img/iochi_mari_taisohuku.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .izayoi_nonomi {
+    background-image: url(../img/izayoi_nonomi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .izayoi_nonomi_summer {
+    background-image: url(../img/izayoi_nonomi_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .izumimoto_eimi {
+    background-image: url(../img/izumimoto_eimi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .jomae_saori {
+    background-image: url(../img/jomae_saori.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kagami_chihiro {
+    background-image: url(../img/kagami_chihiro.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kakudate_karin {
+    background-image: url(../img/kakudate_karin.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kakudate_karin_bunny {
+    background-image: url(../img/kakudate_karin_bunny.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kasuga_tubaki {
+    background-image: url(../img/kasuga_tubaki.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kasumizawa_miyu {
+    background-image: url(../img/kasumizawa_miyu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kasumizawa_miyu_summer {
+    background-image: url(../img/kasumizawa_miyu_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kawawa_shizuko {
+    background-image: url(../img/kawawa_shizuko.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kawawa_shizuko_summer {
+    background-image: url(../img/kawawa_shizuko_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kazekura_moe {
+    background-image: url(../img/kazekura_moe.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kenzaki_turugi {
+    background-image: url(../img/kenzaki_turugi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kenzaki_turugi_summer {
+    background-image: url(../img/kenzaki_turugi_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kinugawa_kasumi {
+    background-image: url(../img/kinugawa_kasumi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .konuri_maki {
+    background-image: url(../img/konuri_maki.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kosaka_wakamo {
+    background-image: url(../img/kosaka_wakamo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kosaka_wakamo_summer {
+    background-image: url(../img/kosaka_wakamo_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kozeki_ui {
+    background-image: url(../img/kozeki_ui.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kozeki_ui_summer {
+    background-image: url(../img/kozeki_ui_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kuda_izuna {
+    background-image: url(../img/kuda_izuna.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kuda_izuna_summer {
+    background-image: url(../img/kuda_izuna_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kurimura_airi {
+    background-image: url(../img/kurimura_airi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kurodate_haruna {
+    background-image: url(../img/kurodate_haruna.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kurodate_haruna_newyear {
+    background-image: url(../img/kurodate_haruna_newyear.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kurodate_haruna_taisohuku {
+    background-image: url(../img/kurodate_haruna_taisohuku.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kuromi_serika {
+    background-image: url(../img/kuromi_serika.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kuromi_serika_newyear {
+    background-image: url(../img/kuromi_serika_newyear.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kurosaki_koyuki {
+    background-image: url(../img/kurosaki_koyuki.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kuwakami_kaho {
+    background-image: url(../img/kuwakami_kaho.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .kyoyama_kazusa {
+    background-image: url(../img/kyoyama_kazusa.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .mayoi_shigure {
+    background-image: url(../img/mayoi_shigure.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .mayoi_shigure_onsen {
+    background-image: url(../img/mayoi_shigure_onsen.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .mikamo_neru {
+    background-image: url(../img/mikamo_neru.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .mikamo_neru_bunny {
+    background-image: url(../img/mikamo_neru_bunny.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .misaka_mikoto {
+    background-image: url(../img/misaka_mikoto.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .misono_mika {
+    background-image: url(../img/misono_mika.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .mizuha_mimori {
+    background-image: url(../img/mizuha_mimori.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .mizuha_mimori_summer {
+    background-image: url(../img/mizuha_mimori_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .morizuki_suzumi {
+    background-image: url(../img/morizuki_suzumi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .murokasa_akane {
+    background-image: url(../img/murokasa_akane.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .nakamasa_ichika {
+    background-image: url(../img/nakamasa_ichika.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .nakatukasa_kirino {
+    background-image: url(../img/nakatukasa_kirino.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .natume_iroha {
+    background-image: url(../img/natume_iroha.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .nekozuka_hibiki {
+    background-image: url(../img/nekozuka_hibiki.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .nekozuka_hibiki_ouendan {
+    background-image: url(../img/nekozuka_hibiki_ouendan.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .nemugaki_hubuki {
+    background-image: url(../img/nemugaki_hubuki.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .ogata_kanna {
+    background-image: url(../img/ogata_kanna.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .okusora_ayane {
+    background-image: url(../img/okusora_ayane.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .okusora_ayane_summer {
+    background-image: url(../img/okusora_ayane_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .omagari_hare {
+    background-image: url(../img/omagari_hare.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .onikata_kayoko {
+    background-image: url(../img/onikata_kayoko.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .onikata_kayoko_newyear {
+    background-image: url(../img/onikata_kayoko_newyear.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .oono_tukuyo {
+    background-image: url(../img/oono_tukuyo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .otohana_sumire {
+    background-image: url(../img/otohana_sumire.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .otose_kotama {
+    background-image: url(../img/otose_kotama.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .renkawa_cherino {
+    background-image: url(../img/renkawa_cherino.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .renkawa_cherino_onsen {
+    background-image: url(../img/renkawa_cherino_onsen.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .rikuhachima_aru {
+    background-image: url(../img/rikuhachima_aru.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .rikuhachima_aru_newyear {
+    background-image: url(../img/rikuhachima_aru_newyear.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .saiba_midori {
+    background-image: url(../img/saiba_midori.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .saiba_momoi {
+    background-image: url(../img/saiba_momoi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .sashiro_tomoe {
+    background-image: url(../img/sashiro_tomoe.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .saten_ruiko {
+    background-image: url(../img/saten_ruiko.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .shimoe_koharu {
+    background-image: url(../img/shimoe_koharu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .shimoe_koharu_summer {
+    background-image: url(../img/shimoe_koharu_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .shimokura_megu {
+    background-image: url(../img/shimokura_megu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .shiraishi_utaha {
+    background-image: url(../img/shiraishi_utaha.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .shiraishi_utaha_ouendan {
+    background-image: url(../img/shiraishi_utaha_ouendan.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .shirasu_azusa {
+    background-image: url(../img/shirasu_azusa.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .shirasu_azusa_summer {
+    background-image: url(../img/shirasu_azusa_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .shiromi_iori {
+    background-image: url(../img/shiromi_iori.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .shiromi_iori_summer {
+    background-image: url(../img/shiromi_iori_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .shishido_izumi {
+    background-image: url(../img/shishido_izumi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .shishido_izumi_summer {
+    background-image: url(../img/shishido_izumi_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .shizuyama_mashiro {
+    background-image: url(../img/shizuyama_mashiro.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .shizuyama_mashiro_summer {
+    background-image: url(../img/shizuyama_mashiro_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .shokuho_misaki {
+    background-image: url(../img/shokuho_misaki.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .sorai_saki {
+    background-image: url(../img/sorai_saki.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .sorai_saki_summer {
+    background-image: url(../img/sorai_saki_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .sorasaki_hina {
+    background-image: url(../img/sorasaki_hina.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .sorasaki_hina_summer {
+    background-image: url(../img/sorasaki_hina_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .sumi_serina {
+    background-image: url(../img/sumi_serina.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .sumi_serina_xmas {
+    background-image: url(../img/sumi_serina_xmas.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .sunaokami_shiroko {
+    background-image: url(../img/sunaokami_shiroko.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .sunaokami_shiroko_riding {
+    background-image: url(../img/sunaokami_shiroko_riding.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .sunaokami_shiroko_summer {
+    background-image: url(../img/sunaokami_shiroko_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .sunohara_kokona {
+    background-image: url(../img/sunohara_kokona.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .sunohara_syun {
+    background-image: url(../img/sunohara_syun.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .sunohara_syun_yojo {
+    background-image: url(../img/sunohara_syun_yojo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .takanashi_hoshino {
+    background-image: url(../img/takanashi_hoshino.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .takanashi_hoshino_summer {
+    background-image: url(../img/takanashi_hoshino_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .tendo_arisu {
+    background-image: url(../img/tendo_arisu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .tendo_arisu_maid {
+    background-image: url(../img/tendo_arisu_maid.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .toyomi_kotori {
+    background-image: url(../img/toyomi_kotori.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .toyomi_kotori_ouendan {
+    background-image: url(../img/toyomi_kotori_ouendan.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .tuchinaga_hiyori {
+    background-image: url(../img/tuchinaga_hiyori.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .tukiyuki_miyako {
+    background-image: url(../img/tukiyuki_miyako.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .tukiyuki_miyako_summer {
+    background-image: url(../img/tukiyuki_miyako_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .urawa_hanako {
+    background-image: url(../img/urawa_hanako.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .urawa_hanako_summer {
+    background-image: url(../img/urawa_hanako_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .ushimaki_juri {
+    background-image: url(../img/ushimaki_juri.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .ushio_noa {
+    background-image: url(../img/ushio_noa.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .utazumi_sakurako {
+    background-image: url(../img/utazumi_sakurako.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .uzawa_reisa {
+    background-image: url(../img/uzawa_reisa.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .wakaba_hinata {
+    background-image: url(../img/wakaba_hinata.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .wakaba_hinata_summer {
+    background-image: url(../img/wakaba_hinata_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .wanibuchi_akari {
+    background-image: url(../img/wanibuchi_akari.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .waraku_chise {
+    background-image: url(../img/waraku_chise.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .waraku_chise_summer {
+    background-image: url(../img/waraku_chise_summer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .yakushi_saya {
+    background-image: url(../img/yakushi_saya.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .yakushi_saya_shihuku {
+    background-image: url(../img/yakushi_saya_shihuku.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .yasumori_minori {
+    background-image: url(../img/yasumori_minori.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list_content_bg .yutori_natu {
+    background-image: url(../img/yutori_natu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* トキバニーまで終了_あいうえお順に登録 */
+
+/* 画像を消すcss */
+.list_content_bg .none {
+    display: none;
+}

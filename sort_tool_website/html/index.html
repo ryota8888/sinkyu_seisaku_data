@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tool_box.css">
+    <link rel="stylesheet" href="../css/char_img.css">
+    <link rel="stylesheet" href="../css/filter_modal.css">
+
+    <title>進級制作</title>
+</head>
+
+<body>
+    <header>
+        <span>~S.C.H.A.L.E直属組織~</span><br>
+        攻略支援部
+    </header>
+    <div class="main_container"> <!--naviとarticleにflexをつけるためのタグ-->
+        <div class="navi">
+            <ul>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">ホーム</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
+                        <span class="title">お知らせ</span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <span class="title">生徒一覧</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="bug-outline"></ion-icon></span>
+                        <span class="title">バグ報告</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                        <span class="title">ご要望</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                        <span class="title">アロプラch</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="logo-twitter"></ion-icon></span>
+                        <span class="title">公式Twitter</span>
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+
+        <article>
+            <h1>
+                <span class="border">
+                    生徒一覧
+                </span>
+            </h1>
+            <div class="description">
+                <p>このサイトは生徒を一覧で表示するサイトです。ゲーム内と同様にフィルターやソートをかけて効率的に生徒を探すことができます。</p>
+            </div>
+<!--生徒一覧ツール-->
+            <div class="char_list_container">   
+                <div class="list_header">  
+                    <div class="content_container">
+                        <div class="item1">
+                            <span class="centering">生徒一覧</span>
+                        </div>
+
+                        <div class="item2_container">
+                            <div class="item2">
+                                <span class="centering">ALL</span>
+                            </div>
+                            <div class="item2">
+                                <span class="centering red">STR</span>
+                            </div>
+                            <div class="item2">
+                                <span class="centering blue">SPL</span>
+                            </div>
+                        </div>
+
+                        <div class="item3_container">
+                            <div class="item3">
+                                <span class="centering">
+                                    <ion-icon name="funnel"></ion-icon>
+                                </span>
+                            </div>
+                            <div class="item3 wide">
+                                <span class="centering">
+                                    並べ替え
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="item4">
+                            <span class="centering">
+                                <ion-icon name="swap-vertical-outline"></ion-icon>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="list_content_container">
+                    <div class="list_content_bg centering">
+                        <ul class="centering">
+                            <li class="char_img aikiyo_huka"></li>
+                            <li class="char_img aikiyo_huka_newyear"></li>
+                            <li class="char_img ajitani_hihumi"></li>
+                            <li class="char_img ajitani_hihumi_summer"></li>
+                            <li class="char_img akashi_junko"></li>
+                            <li class="char_img akashi_junko_newyear"></li>
+                            <li class="char_img akeboshi_himari"></li>
+                            <li class="char_img akeshiro_rumi"></li>
+                            <li class="char_img akiizumi_momiji"></li>
+                            <li class="char_img amami_nodoka"></li>
+                            <li class="char_img amau_ako"></li>
+                            <li class="char_img aomori_mine"></li>
+                            <li class="char_img asagao_hanae"></li>
+                            <li class="char_img asagao_hanae_xmas"></li>
+                            <li class="char_img asagi_mutuki"></li>
+                            <li class="char_img asagi_mutuki_newyear"></li>
+                            <li class="char_img asahina_fina"></li>
+                            <li class="char_img asuma_toki"></li>
+                            <li class="char_img asuma_toki_bunny"></li>
+
+
+
+                        </ul>
+    
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+    <footer>
+        <span>Copyright&copy;Yostar, Inc. All rights reserved.</span>
+
+        <p>当サイトのコンテンツ内で使用しているゲーム画像の著作権その他の知的財産権は、当該ゲームの提供元に帰属しています。 </p>
+    </footer>
+
+    <!-- フィルターモーダル部分 -->
+    <div class="filter_modal">
+        <div class="filter_modal_mask">
+            <div class="filter_box centering"></div>
+        </div>
+    </div>
+
+
+    <script src="../js/active.js"></script>
+
+    <!-- iconを使用するためのscript -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
