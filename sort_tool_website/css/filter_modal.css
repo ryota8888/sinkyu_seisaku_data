@@ -163,7 +163,8 @@
 /* クリックされた場合のcss */
 .check_item.active {
     background-color: #cef5ff;
-    border: 2px solid #4c99e1;
+    border: 2px solid #0c5dff;
+    /* border: 2px solid #4c99e1; */
 }
 
 
@@ -212,16 +213,11 @@
     font-size: 20px;
 }
 
-.word_icon .pos_font {
-    font-family: 'Yusei Magic', sans-serif;
-    color: white;
-    font-size: 20px;
-}
 
 .word_icon .sch_font {
     font-family: 'Kosugi Maru', sans-serif;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     white-space: nowrap;
 }
 
