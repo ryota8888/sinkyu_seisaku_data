@@ -43,6 +43,22 @@
     font-size: 30px;
 }
 
+.close_btn {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateX(-100%) translateY(-50%);
+    width: 60px;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.close_btn ion-icon{
+    color: #435566;
+    width: 50px;
+    height: 50px;
+}
+
 .filter_box main {
     position: relative;
     height: 87.5%;
@@ -108,9 +124,19 @@
 
 .check_container {
     display: flex;
+    /* flex-wrap: wrap; */
     user-select: none;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
+.school_grid_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* レアリティ~役割までの枠組み */
 .check_item {
     position: relative;
     top: 0;
@@ -119,9 +145,19 @@
     height: 45px;
     border: 1.5px solid rgba(128, 128, 128, 0.356);
     border-radius: 7.5px;
-    margin: 20px;
-    margin-left: 12.5px;
+    margin: 10px;
+    margin-left: 11px;
     transition: all 0.1s;
+}
+
+/* ポジションの枠組み */
+.pos_width {
+    width: 135px;
+}
+
+/* 学校の枠組み */
+.sch_width {
+    width: 145px;
 }
 
 /* クリックされた場合のcss */
@@ -130,6 +166,16 @@
     border: 2px solid #4c99e1;
 }
 
+
+/* フィルター内フォント */
+.f_font {
+    font-family: 'Kosugi Maru', sans-serif;
+    color: #143E64;
+}
+
+/* アイコン---------------------- */
+
+/* レアリティ */
 .check_item .icon_star {
     display: flex;
 }
@@ -140,14 +186,7 @@
     height: 30px;
 }
 
-/* フィルター内フォント */
-.f_font {
-    font-family: 'Kosugi Maru', sans-serif;
-    color: #143E64;
-}
-
-/* アイコン---------------------- */
-
+/* 攻撃、防御、役割の大きさ */
 .check_item .icon {
     width: 30px;
     height: 30px;
@@ -155,7 +194,38 @@
     background-repeat: no-repeat;
 }
 
-/* 攻撃タイプアイコン */
+/* 文字アイコン全般の設定 */
+.check_item .word_icon {
+    width: 110px;
+    height: 30px;
+    background-color: #143e64;
+    border-radius: 3px;
+}
+
+.check_item .sch_box {
+    width: 130px;
+}
+
+.word_icon .pos_font {
+    font-family: 'Yusei Magic', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.word_icon .pos_font {
+    font-family: 'Yusei Magic', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.word_icon .sch_font {
+    font-family: 'Kosugi Maru', sans-serif;
+    color: white;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+/* 攻撃タイプ */
 .attack_red {
     background-image: url(../img/filter_icon/attack_red.svg);
 }
@@ -173,7 +243,7 @@
 }
 
 
-/* 防御タイプアイコン */
+/* 防御タイプ */
 .defense_red {
     background-image: url(../img/filter_icon/defense_red.svg);
 }
@@ -191,23 +261,23 @@
 }
 
 
-/* 役割アイコン */
+/* 役割 */
 .job_tanker {
-    background-image: url(../img/filter_icon/defense_purple.svg);
+    background-image: url(../img/filter_icon/job_tanker.svg);
 }
 
 .job_attacker {
-    background-image: url(../img/filter_icon/defense_purple.svg);
+    background-image: url(../img/filter_icon/job_attacker.svg);
 }
 
 .job_healer {
-    background-image: url(../img/filter_icon/defense_purple.svg);
+    background-image: url(../img/filter_icon/job_attacker.svg);
 }
 
 .job_supporter {
-    background-image: url(../img/filter_icon/defense_purple.svg);
+    background-image: url(../img/filter_icon/job_attacker.svg);
 }
 
 .job_tactical_sp {
-    background-image: url(../img/filter_icon/defense_purple.svg);
+    background-image: url(../img/filter_icon/job_attacker.svg);
 }
