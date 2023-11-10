@@ -10,6 +10,19 @@
     text-decoration: none;
     font-family: 'Yusei Magic', sans-serif;
     list-style: none;
+    font-weight: normal;
+}
+
+/* スクロールバー色変更 */
+::-webkit-scrollbar {
+    background-color: #ffffff00;
+    width: 10px;
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9fb7cd;
+    border-radius: 20px;
 }
 
 body {
@@ -31,6 +44,7 @@ header {
 header span {
     font-size: 15px;
 }
+
 /* サイトのヘッダ最下部--------------------------------------- */
 
 /* naviとarticleにflex */
@@ -39,7 +53,7 @@ header span {
 }
 
 /* naviバーの設定--------------------------------------- */
-.navi {
+nav {
     position: sticky;
     top: 0;
     /* left: 0; */
@@ -54,17 +68,17 @@ header span {
     transition: all 0.35s;
 }
 
-.navi:hover {
+nav:hover {
     width: 250px;
 }
 
-.navi ul {
+nav ul {
     width: 100%;
     padding-top: 20px;
     padding-left: 10px;
 }
 
-.navi ul li {
+nav ul li {
     display: block;
     width: 100%;
     position: relative;
@@ -72,15 +86,15 @@ header span {
     /* background-color: black; */
 }
 
-.navi ul li:hover {
+nav ul li:hover {
     background-color: #18406660;
 }
 
-.navi ul li.active {
+nav ul li.active {
     background-color: #edc834;
 }
 
-.navi ul li.active::before {
+nav ul li.active::before {
     content: '';
     position: absolute;
     /* background-color: red; */
@@ -93,7 +107,7 @@ header span {
     box-shadow: 15px 15px 0 #edc834;
 }
 
-.navi ul li.active::after {
+nav ul li.active::after {
     content: '';
     position: absolute;
     /* background-color: red; */
@@ -108,14 +122,14 @@ header span {
 
 
 
-.navi ul li a {
+nav ul li a {
     position: relative;
     display: flex;
     color: white;
     width: 100%;
 }
 
-.navi ul li a .icon {
+nav ul li a .icon {
     display: block;
     min-width: 45px;
     height: 60px;
@@ -123,16 +137,17 @@ header span {
     text-align: center;
 }
 
-.navi ul li a .icon ion-icon {
+nav ul li a .icon ion-icon {
     font-size: 1.5rem;
 }
 
-.navi ul li .title {
+nav ul li .title {
     padding-left: 10px;
     height: 60px;
     line-height: 60px;
     white-space: nowrap;
 }
+
 /* naviバーの設定最下部--------------------------------------- */
 
 /* articleの設定--------------------------------------- */
@@ -171,5 +186,5 @@ footer {
     background-color: #343f49;
     padding: 20px;
 }
-/* articleの設定最下部--------------------------------------- */
 
+/* articleの設定最下部--------------------------------------- */

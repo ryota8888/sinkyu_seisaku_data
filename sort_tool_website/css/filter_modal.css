@@ -1,11 +1,13 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Yusei+Magic&display=swap');
 
+/* フィルターモーダルcss */
 .filter_modal {
     display: block;
     position: relative;
 }
 
+/* フィルター以外を少し暗くするcss */
 .filter_modal_mask {
     position: fixed;
     top: 0;
@@ -15,16 +17,197 @@
     height: 100%;
 }
 
+
+/* フィルターの装飾-------------------------------------------- */
+
 .filter_box {
     background-color: white;
-    width: 900px;
-    height: 700px;
+    width: 65%;
+    height: 85%;
     border-radius: 20px;
 }
 
-.filter_box .header {
+/* ヘッダー--------------------------------- */
+.filter_box header {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50px;
+    height: 12.5%;
     background-color: #B6DCFF;
     border-radius: 20px 20px 0 0;
+    user-select: none;
+}
+
+.filter_box header h2 {
+    font-size: 30px;
+}
+
+.filter_box main {
+    position: relative;
+    height: 87.5%;
+}
+
+/* filter_itemのcss------------------------- */
+.filter_item_content {
+    position: relative;
+    height: 95%;
+    width: 99%;
+    padding: 25px 30px;
+    overflow-y: auto;
+}
+
+.filter_item_content::-webkit-scrollbar {
+    display: block;
+}
+
+
+.filter_item {
+    position: relative;
+    /* margin: 30px 20px; */
+}
+
+/* アイテムのタイトル部分のcss---------- */
+
+.filter_item .title_box h3 {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+/* アイテム名の前にある縦線 */
+.title_box {
+    position: relative;
+    user-select: none;
+}
+
+.filter_item .title_box h3::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 3px;
+    height: calc(100% + 2.5px);
+    background-color: #A3D1FB;
+    border-radius: 3px;
+
+}
+
+/* 下線 */
+.filter_item .title_box::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: #BCD0E2;
+    border-radius: 1px;
+}
+
+/* チェックアイテム部分のcss------------ */
+
+.check_container {
+    display: flex;
+    user-select: none;
+}
+
+.check_item {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 45px;
+    border: 1.5px solid rgba(128, 128, 128, 0.356);
+    border-radius: 7.5px;
+    margin: 20px;
+    margin-left: 12.5px;
+    transition: all 0.1s;
+}
+
+/* クリックされた場合のcss */
+.check_item.active {
+    background-color: #cef5ff;
+    border: 2px solid #4c99e1;
+}
+
+.check_item .icon_star {
+    display: flex;
+}
+
+.check_item .icon_star ion-icon {
+    color: #FFB800;
+    width: 30px;
+    height: 30px;
+}
+
+/* フィルター内フォント */
+.f_font {
+    font-family: 'Kosugi Maru', sans-serif;
+    color: #143E64;
+}
+
+/* アイコン---------------------- */
+
+.check_item .icon {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* 攻撃タイプアイコン */
+.attack_red {
+    background-image: url(../img/filter_icon/attack_red.svg);
+}
+
+.attack_yellow {
+    background-image: url(../img/filter_icon/attack_yellow.svg);
+}
+
+.attack_blue {
+    background-image: url(../img/filter_icon/attack_blue.svg);
+}
+
+.attack_purple {
+    background-image: url(../img/filter_icon/attack_purple.svg);
+}
+
+
+/* 防御タイプアイコン */
+.defense_red {
+    background-image: url(../img/filter_icon/defense_red.svg);
+}
+
+.defense_yellow {
+    background-image: url(../img/filter_icon/defense_yellow.svg);
+}
+
+.defense_blue {
+    background-image: url(../img/filter_icon/defense_blue.svg);
+}
+
+.defense_purple {
+    background-image: url(../img/filter_icon/defense_purple.svg);
+}
+
+
+/* 役割アイコン */
+.job_tanker {
+    background-image: url(../img/filter_icon/defense_purple.svg);
+}
+
+.job_attacker {
+    background-image: url(../img/filter_icon/defense_purple.svg);
+}
+
+.job_healer {
+    background-image: url(../img/filter_icon/defense_purple.svg);
+}
+
+.job_supporter {
+    background-image: url(../img/filter_icon/defense_purple.svg);
+}
+
+.job_tactical_sp {
+    background-image: url(../img/filter_icon/defense_purple.svg);
 }
