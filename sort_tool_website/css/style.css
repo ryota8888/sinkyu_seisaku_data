@@ -13,6 +13,17 @@
     font-weight: normal;
 }
 
+/* クリックアニメーション */
+.img_click:active {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+.btn_click:active {
+    transform: scale(0.9);
+    transition: 0.25s;
+}
+
+
 /* スクロールバー色変更 */
 ::-webkit-scrollbar {
     background-color: #ffffff00;

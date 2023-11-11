@@ -1,6 +1,3 @@
-@charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Yusei+Magic&display=swap');
-
 :root {
     --list_header_height: 60px;
 }
@@ -101,8 +98,6 @@ article .description p {
     color: #1E85E3;
 }
 
-/* item2の装飾終わり ---------------------------------------*/
-
 /* item3の装飾 ---------------------------------------*/
 .list_header .content_container .item3_container {
     display: flex;
@@ -113,7 +108,8 @@ article .description p {
     position: relative;
     width: 40px;
     height: 40px;
-    background-color: #effffe;
+    /* background-color: #acdfff; */
+    background-color: #4b99e1;
     border-radius: 10px;
     margin-right: 7.5px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -121,17 +117,21 @@ article .description p {
 
 .item3_container .item3 span {
     font-family: 'Kosugi Maru', sans-serif;
-    color: #143E64;
+    /* color: #143E64; */
+    color: white;
     font-size: 22px;
     white-space: nowrap;
-    /*改行をしないためのcss*/
 }
 
 .item3_container .item3 span ion-icon {
-    color: #143e64;
-    width: 30px;
-    height: 30px;
-    margin-top: 7px;
+    /* color: #143e64; */
+    color: white;
+    /* width: 30px;
+    height: 30px; */
+    width: 27.5px;
+    height: 27.5px;
+    /* margin-top: 7px; */
+    margin-top: 5px;
 }
 
 .item3_container .wide {
@@ -145,20 +145,21 @@ article .description p {
     position: relative;
     width: 50px;
     height: 40px;
-    background-color: #effffe;
+    /* background-color: #acdfff; */
+    background-color: #4b99e1;
     border-radius: 10px;
     margin-left: 15px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .list_header .content_container .item4 span {
-    color: #143e64;
     width: 30px;
     height: 30px;
 }
 
 .item4 span ion-icon {
-    color: #143e64;
+    /* color: #143e64; */
+    color: white;
     width: 30px;
     height: 30px;
 }
@@ -194,6 +195,7 @@ article .description p {
     width: 95%;
     height: 90%;
     overflow-y: auto;
+    padding: 5px;
 }
 .list_content_bg ul:hover::-webkit-scrollbar {
     display: block;
