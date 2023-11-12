@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/tool_box.css">
     <link rel="stylesheet" href="../css/char_img.css">
-    <link rel="stylesheet" href="../css/filter_modal.css">
+    <link rel="stylesheet" href="../css/modal.css">
 
 
     <title>進級制作</title>
@@ -84,13 +84,13 @@
                         </div>
 
                         <div class="item2_container">
-                            <div class="item2">
+                            <div class="item2 btn_click">
                                 <span class="centering">ALL</span>
                             </div>
-                            <div class="item2">
+                            <div class="item2 btn_click">
                                 <span class="centering red">STR</span>
                             </div>
-                            <div class="item2">
+                            <div class="item2 btn_click">
                                 <span class="centering blue">SPL</span>
                             </div>
                         </div>
@@ -101,7 +101,7 @@
                                     <ion-icon name="funnel"></ion-icon>
                                 </span>
                             </div>
-                            <div class="item3 wide btn_click ">
+                            <div class="item3 wide btn_click sort_icon ">
                                 <span class="centering">
                                     並べ替え
                                 </span>
@@ -235,32 +235,34 @@
 
         <p>当サイトのコンテンツ内で使用しているゲーム画像の著作権その他の知的財産権は、当該ゲームの提供元に帰属しています。 </p>
     </footer>
-    <!-- フィルターモーダル部分 -->
 
+    <!-- フィルターモーダル -->
+    <div class="filter modal">
+        <div class="filter_m modal_mask">
 
-    <div class="filter_modal">
-        <div class="filter_modal_mask">
-            <div class="filter_box centering">
+            <div class="filter_b modal_box centering">
                 <main>
                     <header>
-                        <h2 class="centering f_font">フィルター</h2>
-                        <div class="reset_btn btn_click">
-                            <p class="re_font centering">
-                                リセット
-                            </p>
-                        </div>
-                        <div class="close_btn">
-                            <div class="centering">
-                                <ion-icon name="close"></ion-icon>
-                            </div>
-                        </div>
+                        <h2 class="centering m_font">フィルター</h2>
+                        <ul class="btn_container">
+                            <li class="reset_btn btn_click">
+                                <p class="re_font centering">
+                                    リセット
+                                </p>
+                            </li>
+                            <li class="close_btn btn_click">
+                                <div class="centering">
+                                    <ion-icon name="close"></ion-icon>
+                                </div>
+                            </li>
+                        </ul>
                     </header>
 
                     <ul class="filter_item_content centering">
 
                         <li class="filter_item">
                             <div class="title_box">
-                                <h3 class="f_font">レアリティ</h3>
+                                <h3 class="m_font">レアリティ</h3>
                             </div>
                             <ul class="check_container">
 
@@ -288,7 +290,7 @@
 
                         <li class="filter_item">
                             <div class="title_box">
-                                <h3 class="f_font">攻撃タイプ</h3>
+                                <h3 class="m_font">攻撃タイプ</h3>
                             </div>
                             <ul class="check_container">
 
@@ -318,7 +320,7 @@
 
                         <li class="filter_item">
                             <div class="title_box">
-                                <h3 class="f_font">防御タイプ</h3>
+                                <h3 class="m_font">防御タイプ</h3>
                             </div>
                             <ul class="check_container">
 
@@ -348,7 +350,7 @@
 
                         <li class="filter_item">
                             <div class="title_box">
-                                <h3 class="f_font">役割</h3>
+                                <h3 class="m_font">役割</h3>
                             </div>
                             <ul class="check_container">
 
@@ -383,7 +385,7 @@
 
                         <li class="filter_item">
                             <div class="title_box">
-                                <h3 class="f_font">ポジション</h3>
+                                <h3 class="m_font">ポジション</h3>
                             </div>
                             <ul class="check_container">
 
@@ -414,7 +416,7 @@
 
                         <li class="filter_item">
                             <div class="title_box">
-                                <h3 class="f_font">学校</h3>
+                                <h3 class="m_font">学校</h3>
                             </div>
                             <ul class="check_container school_grid_container">
 
@@ -494,15 +496,89 @@
 
                     </ul>
                 </main>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 並べ替えモーダル -->
+    <div class="sort modal">
+        <div class="sort_m modal_mask">
+
+            <div class="sort_b modal_box centering">
+                <main>
 
 
+                    <header>
+                        <h2 class="centering m_font">並べ替え</h2>
+                        <ul class="btn_container">
+                            <li class="reset_btn btn_click">
+                                <p class="re_font centering">
+                                    リセット
+                                </p>
+                            </li>
+                            <li class="close_btn btn_click">
+                                <div class="centering">
+                                    <ion-icon name="close"></ion-icon>
+                                </div>
+                            </li>
+                        </ul>
+                    </header>
+
+                    <div class="sort_container">
+
+                        <ul class="sort_item_container centering2">
+                            <li class="item_box">
+                                <div class="item centering2 active">
+                                    <p class="m_font centering">名前</p>
+                                </div>
+                            </li>
+                            <li class="item_box">
+                                <div class="item centering2">
+                                    <p class="m_font centering">レアリティ</p>
+                                </div>
+                            </li>
+                            <li class="item_box">
+                                <div class="item centering2">
+                                    <p class="m_font centering">射程距離</p>
+                                </div>
+                            </li>
+                            <li class="item_box">
+                                <div class="item centering2">
+                                    <p class="m_font centering">市街地</p>
+                                </div>
+                            </li>
+                            <li class="item_box">
+                                <div class="item centering2">
+                                    <p class="m_font centering">屋外</p>
+                                </div>
+                            </li>
+                            <li class="item_box">
+                                <div class="item centering2">
+                                    <p class="m_font centering">屋内</p>
+                                </div>
+                            </li>
+                            <li class="item_box">
+                                <div class="item centering2">
+                                    <p class="m_font centering">攻撃タイプ</p>
+                                </div>
+                            </li>
+                            <li class="item_box">
+                                <div class="item centering2">
+                                    <p class="m_font centering">防御タイプ</p>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                </main>
 
             </div>
         </div>
     </div>
-
-
-
 
     <!-- オリジナルjs -->
     <script src="../js/active.js"></script>

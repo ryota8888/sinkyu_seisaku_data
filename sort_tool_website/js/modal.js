@@ -2,9 +2,14 @@
 
 // フィルター
 const fil_open = document.querySelector('.item3_container .filter_icon');
-const fil_modal = document.querySelector('.filter_modal');
-const fil_close = document.querySelector('.filter_modal .close_btn');
-const fil_mask = document.querySelector('.filter_modal .filter_modal_mask');
+const fil_modal = document.querySelector('.filter');
+const fil_close = document.querySelector('.filter .close_btn');
+const fil_mask = document.querySelector('.filter .filter_m');
+
+const sort_open = document.querySelector('.item3_container .sort_icon');
+const sort_modal = document.querySelector('.sort');
+const sort_close = document.querySelector('.sort .close_btn');
+const sort_mask = document.querySelector('.sort .sort_m');
 
 console.log('モーダルjs 接続中');
 // console.log(fil_open);
@@ -31,3 +36,7 @@ const CloseModal = (close_btn, modal, mask) => {
 // フィルター
 OpenModal(fil_open,fil_modal);
 CloseModal(fil_close, fil_modal, fil_mask);
+
+// 並べ替え
+OpenModal(sort_open,sort_modal);
+CloseModal(sort_close,sort_modal,sort_mask);
