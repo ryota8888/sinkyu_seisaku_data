@@ -83,6 +83,42 @@ article .description p {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+/* .item2_container .item2.category_ALL.active {
+    background-color: #dadeff;
+    border: 2px solid #395194;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.item2_container .item2.category_STR.active {
+    background-color: #ffe0e0;
+    border: 2px solid #962121;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.item2_container .item2.category_SPL.active {
+    background-color: #dffbff;
+    border: 2px solid #126bf0;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+} */
+.item2_container .item2.category_ALL.active {
+    background-color: #143E64;
+    &.item2 span {
+        color: white;
+    }
+}
+
+.item2_container .item2.category_STR.active {
+    background-color: #D31A1A;
+    &.item2 .red {
+        color: white;
+    }
+}
+
+.item2_container .item2.category_SPL.active {
+    background-color: #4498e7;
+    &.item2 .blue {
+        color: white;
+    }
+}
+
 .item2_container .item2 span {
     font-family: 'Kosugi Maru', sans-serif;
     color: #143E64;

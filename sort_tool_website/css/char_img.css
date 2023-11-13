@@ -665,7 +665,10 @@
     background-image: url(../img/yutori_natu.png);
 }
 
-/* トキバニーまで終了_あいうえお順に登録 */
+/* 新規で追加された生徒 */
+.list_content_bg .kadenokoji_yukari {
+    background-image: url(../img/kadenokoji_yukari.png);
+}
 
 /* 画像を消すcss */
 .list_content_bg .none {

@@ -8,16 +8,15 @@ const fil_reset = document.querySelector('.filter .reset_btn');
 const sort_item = document.querySelectorAll('.sort .item_box .item');
 const sort_reset = document.querySelector('.sort .reset_btn');
 
+const all_btn = document.querySelector('.char_list_container .category_ALL');
+const check_stsp_btn = document.querySelectorAll('.char_list_container .item2');
 
 console.log('アクティブjs 接続中');
-console.log(sort_item[0]);
+console.log(check_stsp_btn);
 
-const activetionAdd = (item) => {
-    item.classList.add('active');
-}
 const allActiveRemove = (list_item) => {
     console.log('removeしました。');
-    list_item.forEach(item=>{
+    list_item.forEach(item => {
         item.classList.remove('active');
         // これで一度全部removeしている。
     });
@@ -28,7 +27,15 @@ const allActiveRemove = (list_item) => {
 nav_list.forEach(tab => {
     tab.addEventListener('click', () => {
         allActiveRemove(nav_list);
-        activetionAdd(tab);
+        tab.classList.add('active');
+    });
+});
+
+// all,str,splのアクティブ設定-----------------------
+check_stsp_btn.forEach(item => {
+    item.addEventListener('click',()=>{
+        allActiveRemove(check_stsp_btn);
+        item.classList.toggle('active');
     });
 });
 
@@ -40,7 +47,7 @@ check_item.forEach(ch_item => {
     });
 });
 // リセット
-fil_reset.addEventListener('click',() => {
+fil_reset.addEventListener('click', () => {
     allActiveRemove(check_item);
     // console.log('クリック');
 });
@@ -54,9 +61,9 @@ sort_item.forEach(ch_item => {
     });
 });
 // リセット
-sort_reset.addEventListener('click',() => {
+sort_reset.addEventListener('click', () => {
     allActiveRemove(sort_item);
-    activetionAdd(sort_item[0]);
+    sort_item[0].classList.add('active');
     // console.log('クリック');
 });
 
