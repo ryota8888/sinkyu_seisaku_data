@@ -12,7 +12,7 @@ const all_btn = document.querySelector('.char_list_container .category_ALL');
 const check_stsp_btn = document.querySelectorAll('.char_list_container .item2');
 
 console.log('アクティブjs 接続中');
-console.log(check_stsp_btn);
+// console.log(check_stsp_btn);
 
 const allActiveRemove = (list_item) => {
     console.log('removeしました。');

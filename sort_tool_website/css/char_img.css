@@ -670,6 +670,10 @@
     background-image: url(../img/kadenokoji_yukari.png);
 }
 
+.list_content_bg .kadenokoji_yukari {
+    background-image: url(../img/huwa_renge.png);
+}
+
 /* 画像を消すcss */
 .list_content_bg .none {
     display: none;

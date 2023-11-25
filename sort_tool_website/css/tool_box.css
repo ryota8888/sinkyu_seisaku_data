@@ -28,6 +28,8 @@ article .description p {
     height: 625px;
     background-color: #c9d9f3;
     margin-bottom: 100px;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 /* 一覧ツールのヘッダー部の装飾 -------------------------*/
@@ -35,7 +37,6 @@ article .description p {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 100%;
     height: var(--list_header_height);
     background-color: #5b84c4;
@@ -45,7 +46,6 @@ article .description p {
     display: flex;
     width: 95%;
     height: 65%;
-    user-select: none;
 }
 
 /* item1の装飾 ---------------------------------------*/
@@ -83,23 +83,10 @@ article .description p {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-/* .item2_container .item2.category_ALL.active {
-    background-color: #dadeff;
-    border: 2px solid #395194;
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
-}
-.item2_container .item2.category_STR.active {
-    background-color: #ffe0e0;
-    border: 2px solid #962121;
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
-}
-.item2_container .item2.category_SPL.active {
-    background-color: #dffbff;
-    border: 2px solid #126bf0;
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
-} */
+
 .item2_container .item2.category_ALL.active {
     background-color: #143E64;
+
     &.item2 span {
         color: white;
     }
@@ -107,6 +94,7 @@ article .description p {
 
 .item2_container .item2.category_STR.active {
     background-color: #D31A1A;
+
     &.item2 .red {
         color: white;
     }
@@ -114,6 +102,7 @@ article .description p {
 
 .item2_container .item2.category_SPL.active {
     background-color: #4498e7;
+
     &.item2 .blue {
         color: white;
     }
@@ -215,6 +204,7 @@ article .description p {
     width: 95%;
     height: 90%;
 }
+
 .list_content_bg {
     position: relative;
     background-color: #F7FCFF;
@@ -222,6 +212,7 @@ article .description p {
     height: 100%;
     border-radius: 17.5px;
 }
+
 .list_content_bg ul {
     display: flex;
     flex-wrap: wrap;
@@ -233,6 +224,7 @@ article .description p {
     overflow-y: auto;
     padding: 5px;
 }
+
 .list_content_bg ul:hover::-webkit-scrollbar {
     display: block;
 }

@@ -1,6 +1,7 @@
 /* モーダル共通設定------------------------------------- */
 .modal {
     position: relative;
+    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -336,22 +337,22 @@ ul.sort_item_container {
 
 
 /* 役割 */
-.job_tanker {
-    background-image: url(../img/filter_icon/job_tanker.svg);
+.class_tanker {
+    background-image: url(../img/filter_icon/class_tanker.svg);
 }
 
-.job_attacker {
-    background-image: url(../img/filter_icon/job_attacker.svg);
+.class_attacker {
+    background-image: url(../img/filter_icon/class_attacker.svg);
 }
 
-.job_healer {
-    background-image: url(../img/filter_icon/job_attacker.svg);
+.class_healer {
+    background-image: url(../img/filter_icon/class_healer.svg);
 }
 
-.job_supporter {
-    background-image: url(../img/filter_icon/job_attacker.svg);
+.class_supporter {
+    background-image: url(../img/filter_icon/class_supporter.svg);
 }
 
-.job_tactical_sp {
-    background-image: url(../img/filter_icon/job_attacker.svg);
+.class_tactical_sp {
+    background-image: url(../img/filter_icon/class_tactical_sp.svg);
 }
