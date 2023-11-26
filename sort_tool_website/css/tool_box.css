@@ -84,7 +84,7 @@ article .description p {
 }
 
 
-.item2_container .item2.category_ALL.active {
+.item2_container .item2.ALL.active {
     background-color: #143E64;
 
     &.item2 span {
@@ -92,7 +92,7 @@ article .description p {
     }
 }
 
-.item2_container .item2.category_STR.active {
+.item2_container .item2.STR.active {
     background-color: #D31A1A;
 
     &.item2 .red {
@@ -100,7 +100,7 @@ article .description p {
     }
 }
 
-.item2_container .item2.category_SPL.active {
+.item2_container .item2.SPL.active {
     background-color: #4498e7;
 
     &.item2 .blue {
