@@ -1,24 +1,23 @@
 console.log('sql.js接続中');
-const filID =[];
-filID[0]='rarity';
-filID[1]='attack';
-filID[2]='defense';
-filID[3]='class';
-filID[4]='position';
-filID[5]='school';
+const filID = [];
+filID[0] = 'rarity';
+filID[1] = 'attack';
+filID[2] = 'defense';
+filID[3] = 'class';
+filID[4] = 'position';
+filID[5] = 'school';
 
-const c_list = [];
-let c_list_act = [];
+const fil_list = [];
+let fil_list_act = [];
 
 //各filter_itemの要素を取得
-filID.forEach((id,index) => {
-    c_list[index] = document.querySelectorAll(`#${id} .check_item`);
-    c_list_act[index] = document.querySelectorAll(`#${id} .check_item.active`);
+filID.forEach((id, index) => {
+    fil_list[index] = document.querySelectorAll(`#fil_${id} .check_item`);
+    fil_list_act[index] = document.querySelectorAll(`#fil_${id} .check_item.active`);
 });
-
 const img_list = document.querySelector('.list_content_bg ul')
 
-const fetch_api = (data) => {
+const connect_DB = (data) => {
     url = '../php/data_push.php';
     method_data = 'POST';
     c_type = 'application/json';
@@ -50,22 +49,35 @@ const pushArray = (item) => {
     return retrunReq;
 }
 
+// フィルターのsql問い合わせ
 check_item.forEach(fil_item => {
     fil_item.addEventListener('click', () => {
+
+        //指定された条件を抽出する
         let request = [];
-        c_list.forEach(list => {
+        fil_list.forEach(list => {
             request.push(pushArray(list));
         });
-        filID.forEach((id,index) => {
-            c_list_act[index] = document.querySelectorAll(`#${id} .check_item.active`);
+        filID.forEach((id, index) => {
+            fil_list_act[index] = document.querySelectorAll(`#fil_${id} .check_item.active`);
         });
 
-        c_list_act.forEach((actItem,index) => {  //c_list_actの数まわす
-            if(actItem.length){  //アクティブ状態のアイテムがあるときのみ実行
-                request[index]=[];
-                request[index]=pushArray(actItem);  //各actItemのアクティブになっている数まわす
+        fil_list_act.forEach((actItem, index) => {  //fil_list_actの数まわす
+            if (actItem.length) {  //アクティブ状態のアイテムがあるときのみ実行
+                request[index] = [];
+                request[index] = pushArray(actItem);  //各actItemのアクティブになっている数まわす
             }
         });
-        fetch_api(request);
+
+        //SQL文作成
+        let sql = "SELECT name_alpha FROM char_info WHERE";
+        let whereElem = [];
+        request.forEach((array, index) => {
+            whereElem[index] = ` (${filID[index]} in(`;   //閉じかっこは次で入れる。
+            whereElem[index] += `${array.join(',')}))`;   //配列をカンマ区切りで出力
+        });
+        sql += whereElem.join(' AND');
+
+        connect_DB(sql);
     });
 });
