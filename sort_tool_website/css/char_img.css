@@ -670,8 +670,12 @@
     background-image: url(../img/kadenokoji_yukari.png);
 }
 
-.list_content_bg .kadenokoji_yukari {
+.list_content_bg .huwa_renge {
     background-image: url(../img/huwa_renge.png);
+}
+
+.list_content_bg .kiryu_kikyo {
+    background-image: url(../img/kiryu_kikyo.png);
 }
 
 /* 画像を消すcss */
