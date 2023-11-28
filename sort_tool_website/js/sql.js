@@ -12,10 +12,19 @@ let fil_list_act = [];
 
 //各filter_itemの要素を取得
 filID.forEach((id, index) => {
-    fil_list[index] = document.querySelectorAll(`#fil_${id} .check_item`);
-    fil_list_act[index] = document.querySelectorAll(`#fil_${id} .check_item.active`);
+    fil_list[index] = document.querySelectorAll(`#${id} .check_item`);
+    fil_list_act[index] = document.querySelectorAll(`#${id} .check_item.active`);
 });
+
+const sql_memory = {
+    role: 'role in (1,2)',
+    filter: '(rarity in(1,2,3)) AND (attack in(1,2,3,4)) AND (defense in(1,2,3,4)) AND (class in(1,2,3,4,5)) AND (position in(1,2,3)) AND (school in(1,2,3,4,5,6,7,8,9,10))',
+    sort: 'f_name',
+    order: ''
+}
 const img_list = document.querySelector('.list_content_bg ul')
+const ADtoggle_btn = document.querySelector('.list_header .content_container .item4');
+let sql = `SELECT name_alpha FROM char_info WHERE ${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort}`;
 
 const connect_DB = (data) => {
     url = '../php/data_push.php';
@@ -30,13 +39,14 @@ const connect_DB = (data) => {
         .then(response => response.json())  //データ受信
         .then(res => {
             img_list.innerHTML = '';
-            console.log('--検索結果--');
+            // console.log('--検索結果--');
             res.forEach(item => {
                 img_list.innerHTML += `<li class="char_img img_click ${item.name_alpha}"></li>`;
-                console.log(item.name_alpha);
+                // console.log(item.name_alpha);
             });
         })
         .catch(error => {
+            //エラーメッセージ表示
             img_list.innerHTML = '<li class="message_box"><div class="error_message">問題が発生したため、検索に失敗しました。<br>ページのリロードをお試しください。<br>もしリロードをしても解決しなかった場合、<a href="#">バグ報告タブ</a>にてご報告いただけますと幸いです。</div></li>';
         });
 }
@@ -44,7 +54,7 @@ const connect_DB = (data) => {
 const pushArray = (item) => {
     let retrunReq = [];
     item.forEach(nestItem => {
-        retrunReq.push(nestItem.value);
+        retrunReq.push(nestItem.dataset.value);
     });
     return retrunReq;
 }
@@ -59,7 +69,7 @@ check_item.forEach(fil_item => {
             request.push(pushArray(list));
         });
         filID.forEach((id, index) => {
-            fil_list_act[index] = document.querySelectorAll(`#fil_${id} .check_item.active`);
+            fil_list_act[index] = document.querySelectorAll(`#${id} .check_item.active`);
         });
 
         fil_list_act.forEach((actItem, index) => {  //fil_list_actの数まわす
@@ -70,14 +80,67 @@ check_item.forEach(fil_item => {
         });
 
         //SQL文作成
-        let sql = "SELECT name_alpha FROM char_info WHERE";
         let whereElem = [];
         request.forEach((array, index) => {
             whereElem[index] = ` (${filID[index]} in(`;   //閉じかっこは次で入れる。
             whereElem[index] += `${array.join(',')}))`;   //配列をカンマ区切りで出力
         });
-        sql += whereElem.join(' AND');
-
+        sql_memory.filter = whereElem.join(' AND');
+        sql = `SELECT name_alpha FROM char_info WHERE ${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
+        // console.log(sql);
         connect_DB(sql);
     });
+});
+//フィルターsqlリセット
+fil_reset.addEventListener('click', () => {
+    sql = `SELECT name_alpha FROM char_info WHERE ${sql_memory.role} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
+    // console.log(sql);
+    connect_DB(sql);
+});
+
+// ソートsql問い合わせ
+sort_item.forEach(s_item => {
+    s_item.addEventListener('click', () => {
+        sql_memory.sort = s_item.dataset.value;
+        sql = `SELECT name_alpha FROM char_info WHERE ${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
+        // console.log(sql);
+        connect_DB(sql);
+    });
+});
+//ソートsqlリセット
+sort_reset.addEventListener('click', () => {
+    sort_item.forEach(s_item => {
+        if (s_item.classList.contains('active')) {
+            console.log(s_item.dataset.value);
+            sql_memory.sort = s_item.dataset.value;
+        }
+    });
+    sql = `SELECT name_alpha FROM char_info WHERE ${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
+    // console.log(sql);
+    connect_DB(sql);
+});
+
+// ロールボタンのsql問い合わせ
+role_btn.forEach(r_btn => {
+    r_btn.addEventListener('click', () => {
+        let role_num = r_btn.dataset.value;
+        role_num != 0 ? sql_memory.role = `role in (${role_num})` : sql_memory.role = 'role in (1,2)';
+        sql = `SELECT name_alpha FROM char_info WHERE ${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
+        // console.log(sql);
+        connect_DB(sql);
+    });
+});
+
+// 昇降ボタンクリック
+ADtoggle_btn.addEventListener('click', () => {
+    ADtoggle_btn.classList.toggle('DESC');
+    if (ADtoggle_btn.classList.contains('DESC')) {
+        ADtoggle_btn.innerHTML = '<p class="centering">降</p>';
+        sql_memory.order = 'DESC';
+    } else {
+        ADtoggle_btn.innerHTML = '<p class="centering">昇</p>';
+        sql_memory.order = '';
+    }
+    sql = `SELECT name_alpha FROM char_info WHERE ${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
+    connect_DB(sql);
 });

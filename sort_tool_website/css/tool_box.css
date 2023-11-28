@@ -65,8 +65,6 @@ article .description p {
     /*改行をしないためのcss*/
 }
 
-/* item1の装飾終わり ---------------------------------------*/
-
 /* item2の装飾 ---------------------------------------*/
 .list_header .content_container .item2_container {
     display: flex;
@@ -163,8 +161,6 @@ article .description p {
     width: 100px;
 }
 
-/* item3の装飾終わり ---------------------------------------*/
-
 /* item4の装飾 ---------------------------------------*/
 .list_header .content_container .item4 {
     position: relative;
@@ -177,23 +173,14 @@ article .description p {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.list_header .content_container .item4 span {
-    width: 30px;
-    height: 30px;
-}
-
-.item4 span ion-icon {
-    /* color: #143e64; */
+.list_header .content_container .item4 p {
     color: white;
-    width: 30px;
-    height: 30px;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 25px;
 }
 
-/* item4の装飾終わり ---------------------------------------*/
 
-/* ツールのヘッダー部の装飾終わり -------------------------*/
-
-/* 一覧ツールコンテンツ部の装飾-------------------------------- */
+/* 画像一覧ツールの装飾-------------------------------- */
 .list_content_container {
     position: relative;
     width: 100%;
@@ -282,8 +269,6 @@ article .description p {
     background-repeat: no-repeat;
     background-size: contain;
 }
-
-/* 一覧ツールコンテンツ部の装飾終わり-------------------------------- */
 
 /* 中央寄せのcss */
 .centering {

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/tool_box.css">
     <link rel="stylesheet" href="../css/char_img.css">
     <link rel="stylesheet" href="../css/modal.css">
-
+    <script src="../js/load.js"></script>
 
     <title>進級制作</title>
 </head>
@@ -85,13 +85,13 @@
                         </div>
 
                         <div class="item2_container">
-                            <div class="item2 btn_click ALL active">
+                            <div class="item2 btn_click ALL active" data-value="0">
                                 <span class="centering">ALL</span>
                             </div>
-                            <div class="item2 btn_click STR">
+                            <div class="item2 btn_click STR" data-value="1">
                                 <span class="centering red">STR</span>
                             </div>
-                            <div class="item2 btn_click SPL">
+                            <div class="item2 btn_click SPL" data-value="2">
                                 <span class="centering blue">SPL</span>
                             </div>
                         </div>
@@ -110,9 +110,9 @@
 
                         </div>
                         <div class="item4 btn_click ">
-                            <span class="centering">
-                                <ion-icon name="swap-vertical-outline"></ion-icon>
-                            </span>
+                            <p class="centering">
+                                昇
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -120,24 +120,6 @@
                     <div class="list_wrap centering">
                         <div class="list_content_bg centering">
                             <ul class="centering">
-                                <li class="char_img img_click aikiyo_huka" value="2"></li>
-                                <li class="char_img img_click aikiyo_huka_newyear" value="3"></li>
-                                <li class="char_img img_click ajitani_hihumi" value="3"></li>
-                                <li class="char_img img_click ajitani_hihumi_summer" value="3"></li>
-                                <li class="char_img img_click akashi_junko" value="2"></li>
-                                <li class="char_img img_click akashi_junko_newyear" value="1"></li>
-                                <li class="char_img img_click akeboshi_himari" value="3"></li>
-                                <li class="char_img img_click akeshiro_rumi" value="3"></li>
-                                <li class="char_img img_click akiizumi_momiji" value="2"></li>
-                                <li class="char_img img_click amami_nodoka" value="3"></li>
-                                <li class="char_img img_click amau_ako" value="3"></li>
-                                <li class="char_img img_click aomori_mine" value="3"></li>
-                                <li class="char_img img_click asagao_hanae" value="2"></li>
-                                <li class="char_img img_click asagao_hanae_xmas" value="3"></li>
-                                <li class="char_img img_click asagi_mutuki" value="2"></li>
-                                <li class="char_img img_click asagi_mutuki_newyear" value="3"></li>
-                                <li class="char_img img_click asahina_fina" value="1"></li>
-                                <li class="char_img img_click asuma_toki" value="3"></li>
                             </ul>
 
                         </div>
@@ -178,24 +160,24 @@
 
                     <ul class="filter_item_content centering">
 
-                        <li class="filter_item" id="fil_rarity">
+                        <li class="filter_item" id="rarity">
                             <div class="title_box">
                                 <h3 class="m_font">レアリティ</h3>
                             </div>
                             <ul class="check_container">
 
-                                <li class="check_item" value="1">
+                                <li class="check_item" data-value="1">
                                     <div class="icon_star centering">
                                         <ion-icon name="star"></ion-icon>
                                     </div>
                                 </li>
-                                <li class="check_item" value="2">
+                                <li class="check_item" data-value="2">
                                     <div class="icon_star centering">
                                         <ion-icon name="star"></ion-icon>
                                         <ion-icon name="star"></ion-icon>
                                     </div>
                                 </li>
-                                <li class="check_item" value="3">
+                                <li class="check_item" data-value="3">
                                     <div class="icon_star centering">
                                         <ion-icon name="star"></ion-icon>
                                         <ion-icon name="star"></ion-icon>
@@ -206,28 +188,28 @@
                             </ul>
                         </li>
 
-                        <li class="filter_item" id="fil_attack">
+                        <li class="filter_item" id="attack">
                             <div class="title_box">
                                 <h3 class="m_font">攻撃タイプ</h3>
                             </div>
                             <ul class="check_container">
 
-                                <li class="check_item" value="1">
+                                <li class="check_item" data-value="1">
                                     <div class="icon centering attack_red">
                                         <!-- 攻撃アイコン-red -->
                                     </div>
                                 </li>
-                                <li class="check_item" value="2">
+                                <li class="check_item" data-value="2">
                                     <div class="icon centering attack_yellow">
                                         <!-- 攻撃アイコン-yellow -->
                                     </div>
                                 </li>
-                                <li class="check_item" value="3">
+                                <li class="check_item" data-value="3">
                                     <div class="icon centering attack_blue">
                                         <!-- 攻撃アイコン-blue -->
                                     </div>
                                 </li>
-                                <li class="check_item" value="4">
+                                <li class="check_item" data-value="4">
                                     <div class="icon centering attack_purple">
                                         <!-- 攻撃アイコン-purple -->
                                     </div>
@@ -236,28 +218,28 @@
                             </ul>
                         </li>
 
-                        <li class="filter_item" id="fil_defense">
+                        <li class="filter_item" id="defense">
                             <div class="title_box">
                                 <h3 class="m_font">防御タイプ</h3>
                             </div>
                             <ul class="check_container">
 
-                                <li class="check_item" value="1">
+                                <li class="check_item" data-value="1">
                                     <div class="icon centering defense_red">
                                         <!-- 防御アイコン_red -->
                                     </div>
                                 </li>
-                                <li class="check_item" value="2">
+                                <li class="check_item" data-value="2">
                                     <div class="icon centering defense_yellow">
                                         <!-- 防御アイコン_yellow -->
                                     </div>
                                 </li>
-                                <li class="check_item" value="3">
+                                <li class="check_item" data-value="3">
                                     <div class="icon centering defense_blue">
                                         <!-- 防御アイコン_blue -->
                                     </div>
                                 </li>
-                                <li class="check_item" value="4">
+                                <li class="check_item" data-value="4">
                                     <div class="icon centering defense_purple">
                                         <!-- 防御アイコン_purple -->
                                     </div>
@@ -266,33 +248,33 @@
                             </ul>
                         </li>
 
-                        <li class="filter_item" id="fil_class">
+                        <li class="filter_item" id="class">
                             <div class="title_box">
                                 <h3 class="m_font">役割</h3>
                             </div>
                             <ul class="check_container">
 
-                                <li class="check_item" value="1">
+                                <li class="check_item" data-value="1">
                                     <div class="icon centering class_tanker">
                                         <!-- タンクアイコン -->
                                     </div>
                                 </li>
-                                <li class="check_item" value="2">
+                                <li class="check_item" data-value="2">
                                     <div class="icon centering class_attacker">
                                         <!-- アタッカーアイコン -->
                                     </div>
                                 </li>
-                                <li class="check_item" value="3">
+                                <li class="check_item" data-value="3">
                                     <div class="icon centering class_healer">
                                         <!-- ヒーラーアイコン -->
                                     </div>
                                 </li>
-                                <li class="check_item" value="4">
+                                <li class="check_item" data-value="4">
                                     <div class="icon centering class_supporter">
                                         <!-- サポーターアイコン -->
                                     </div>
                                 </li>
-                                <li class="check_item" value="5">
+                                <li class="check_item" data-value="5">
                                     <div class="icon centering class_tactical_sp">
                                         <!-- T.サポアイコン -->
                                     </div>
@@ -301,27 +283,27 @@
                             </ul>
                         </li>
 
-                        <li class="filter_item" id="fil_position">
+                        <li class="filter_item" id="position">
                             <div class="title_box">
                                 <h3 class="m_font">ポジション</h3>
                             </div>
                             <ul class="check_container">
 
-                                <li class="check_item pos_width" value="1">
+                                <li class="check_item pos_width" data-value="1">
                                     <div class="word_icon centering">
                                         <p class="pos_font centering">
                                             FRONT
                                         </p>
                                     </div>
                                 </li>
-                                <li class="check_item pos_width" value="2">
+                                <li class="check_item pos_width" data-value="2">
                                     <div class="word_icon centering">
                                         <p class="pos_font centering">
                                             MIDDLE
                                         </p>
                                     </div>
                                 </li>
-                                <li class="check_item pos_width" value="3">
+                                <li class="check_item pos_width" data-value="3">
                                     <div class="word_icon centering">
                                         <p class="pos_font centering">
                                             BACK
@@ -332,76 +314,76 @@
                             </ul>
                         </li>
 
-                        <li class="filter_item" id="fil_school">
+                        <li class="filter_item" id="school">
                             <div class="title_box">
                                 <h3 class="m_font">学校</h3>
                             </div>
                             <ul class="check_container school_grid_container">
 
-                                <li class="check_item sch_width" value="1">
+                                <li class="check_item sch_width" data-value="1">
                                     <div class="word_icon sch_box centering">
                                         <p class="sch_font centering">
                                             百鬼夜行
                                         </p>
                                     </div>
                                 </li>
-                                <li class="check_item sch_width" value="2">
+                                <li class="check_item sch_width" data-value="2">
                                     <div class="word_icon sch_box centering">
                                         <p class="sch_font centering">
                                             レッドウィンター
                                         </p>
                                     </div>
                                 </li>
-                                <li class="check_item sch_width" value="3">
+                                <li class="check_item sch_width" data-value="3">
                                     <div class="word_icon sch_box centering">
                                         <p class="sch_font centering">
                                             トリニティ
                                         </p>
                                     </div>
                                 </li>
-                                <li class="check_item sch_width" value="4">
+                                <li class="check_item sch_width" data-value="4">
                                     <div class="word_icon sch_box centering">
                                         <p class="sch_font centering">
                                             ゲヘナ
                                         </p>
                                     </div>
                                 </li>
-                                <li class="check_item sch_width" value="5">
+                                <li class="check_item sch_width" data-value="5">
                                     <div class="word_icon sch_box centering">
                                         <p class="sch_font centering">
                                             ミレニアム
                                         </p>
                                     </div>
                                 </li>
-                                <li class="check_item sch_width" value="6">
+                                <li class="check_item sch_width" data-value="6">
                                     <div class="word_icon sch_box centering">
                                         <p class="sch_font centering">
                                             アリウス
                                         </p>
                                     </div>
                                 </li>
-                                <li class="check_item sch_width" value="7">
+                                <li class="check_item sch_width" data-value="7">
                                     <div class="word_icon sch_box centering">
                                         <p class="sch_font centering">
                                             SRT
                                         </p>
                                     </div>
                                 </li>
-                                <li class="check_item sch_width" value="8">
+                                <li class="check_item sch_width" data-value="8">
                                     <div class="word_icon sch_box centering">
                                         <p class="sch_font centering">
                                             山海経
                                         </p>
                                     </div>
                                 </li>
-                                <li class="check_item sch_width" value="9">
+                                <li class="check_item sch_width" data-value="9">
                                     <div class="word_icon sch_box centering">
                                         <p class="sch_font centering">
                                             ヴァルキューレ
                                         </p>
                                     </div>
                                 </li>
-                                <li class="check_item sch_width" value="10">
+                                <li class="check_item sch_width" data-value="10">
                                     <div class="word_icon sch_box centering">
                                         <p class="sch_font centering">
                                             その他
@@ -447,42 +429,42 @@
 
                         <ul class="sort_item_container centering2">
                             <li class="item_box">
-                                <div class="item centering2 active">
+                                <div class="item centering2 active" data-value="f_name">
                                     <p class="m_font centering">名前</p>
                                 </div>
                             </li>
                             <li class="item_box">
-                                <div class="item centering2">
+                                <div class="item centering2" data-value="rarity">
                                     <p class="m_font centering">レアリティ</p>
                                 </div>
                             </li>
                             <li class="item_box">
-                                <div class="item centering2">
+                                <div class="item centering2" data-value="w_range">
                                     <p class="m_font centering">射程距離</p>
                                 </div>
                             </li>
                             <li class="item_box">
-                                <div class="item centering2">
+                                <div class="item centering2" data-value="town">
                                     <p class="m_font centering">市街地</p>
                                 </div>
                             </li>
                             <li class="item_box">
-                                <div class="item centering2">
+                                <div class="item centering2" data-value="outdoor">
                                     <p class="m_font centering">屋外</p>
                                 </div>
                             </li>
                             <li class="item_box">
-                                <div class="item centering2">
+                                <div class="item centering2" data-value="indoor">
                                     <p class="m_font centering">屋内</p>
                                 </div>
                             </li>
                             <li class="item_box">
-                                <div class="item centering2">
+                                <div class="item centering2" data-value="attack">
                                     <p class="m_font centering">攻撃タイプ</p>
                                 </div>
                             </li>
                             <li class="item_box">
-                                <div class="item centering2">
+                                <div class="item centering2" data-value="defense">
                                     <p class="m_font centering">防御タイプ</p>
                                 </div>
                             </li>
