@@ -25,6 +25,7 @@ article .description p {
 .char_list_container {
     position: relative;
     width: 100%;
+    min-width: 800px;
     height: 625px;
     background-color: #c9d9f3;
     margin-bottom: 100px;
@@ -180,7 +181,7 @@ article .description p {
 }
 
 
-/* 画像一覧ツールの装飾-------------------------------- */
+/* 画像一覧の装飾-------------------------------- */
 .list_content_container {
     position: relative;
     width: 100%;
@@ -210,6 +211,7 @@ article .description p {
     height: 90%;
     overflow-y: auto;
     padding: 5px;
+    padding-top: 0;
 }
 
 .list_content_bg ul:hover::-webkit-scrollbar {
@@ -258,16 +260,44 @@ article .description p {
     background-color: #b04328;
 }
 
+/* 生徒画像表示 */
+.list_content_bg a {
+    display: block;
+}
+.list_content_bg li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
 .list_content_bg .char_img {
     width: 105px;
     height: 105px;
     background-color: #dde7f0;
     border-radius: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
     transition: all 0.35s;
     background-repeat: no-repeat;
     background-size: contain;
+}
+.list_content_bg .caption {
+    font-family: 'Kosugi Maru', sans-serif;
+    color: #ffffff;
+    font-size: 17.5px;
+    background-color: #143E64;
+    margin-top: 5px;
+    padding: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+.caption.red {
+    background-color: #cf1c1c;
+}
+.caption.yellow {
+    background-color: #eba928;
+}
+.caption.blue {
+    background-color: #4371cb;
+}
+.caption.purple {
+    background-color: #7f24c6;
 }
 
 /* 中央寄せのcss */

@@ -41,7 +41,7 @@ const connect_DB = (data) => {
             img_list.innerHTML = '';
             // console.log('--検索結果--');
             res.forEach(item => {
-                img_list.innerHTML += `<li class="char_img img_click ${item.name_alpha}"></li>`;
+                img_list.innerHTML += `<li><a href="character/${item.name_alpha}.html" class="char_img img_click ${item.name_alpha}"></a><p class="caption">愛清フウカ</p></li>`;
                 // console.log(item.name_alpha);
             });
         })

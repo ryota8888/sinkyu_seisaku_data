@@ -213,17 +213,24 @@
     position: relative;
     width: 100%;
     height: 100%;
-
 }
 
+.filter_item_content::-webkit-scrollbar {
+    display: block;
+}
+
+
 ul.sort_item_container {
-    width: 95%;
+    width: 97.5%;
     height: 85%;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 90px;
     overflow-y: auto;
+}
+ul.sort_item_container:hover::-webkit-scrollbar {
+    display: block;
 }
 
 .sort_item_container li.item_box {
