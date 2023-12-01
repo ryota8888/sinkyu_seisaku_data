@@ -24,7 +24,12 @@ const sql_memory = {
 }
 const img_list = document.querySelector('.list_content_bg ul')
 const ADtoggle_btn = document.querySelector('.list_header .content_container .item4');
-let sql = `SELECT name_alpha FROM char_info WHERE ${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort}`;
+
+let select = `name_alpha,${sql_memory.sort} AS caption`;
+let from = `char_info`;
+let where = `${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort}`;
+
+let sql = `SELECT ${select} FROM ${from} WHERE ${where}`;
 
 const connect_DB = (data) => {
     url = '../php/data_push.php';
@@ -41,8 +46,7 @@ const connect_DB = (data) => {
             img_list.innerHTML = '';
             // console.log('--検索結果--');
             res.forEach(item => {
-                img_list.innerHTML += `<li><a href="character/${item.name_alpha}.html" class="char_img img_click ${item.name_alpha}"></a><p class="caption">愛清フウカ</p></li>`;
-                // console.log(item.name_alpha);
+                img_list.innerHTML += `<li><a href="character/${item.name_alpha}.html" class="char_img img_click ${item.name_alpha}"></a><p class="caption">${item.caption}</p></li>`;
             });
         })
         .catch(error => {
@@ -86,15 +90,18 @@ check_item.forEach(fil_item => {
             whereElem[index] += `${array.join(',')}))`;   //配列をカンマ区切りで出力
         });
         sql_memory.filter = whereElem.join(' AND');
-        sql = `SELECT name_alpha FROM char_info WHERE ${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
-        // console.log(sql);
+
+        where = `${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
+        sql = `SELECT ${select} FROM ${from} WHERE ${where}`;
         connect_DB(sql);
     });
 });
 //フィルターsqlリセット
 fil_reset.addEventListener('click', () => {
-    sql = `SELECT name_alpha FROM char_info WHERE ${sql_memory.role} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
-    // console.log(sql);
+    sql_memory.filter = '1';
+    where = `${sql_memory.role} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
+    sql = `SELECT ${select} FROM ${from} WHERE ${where}`;
+    console.log(sql);
     connect_DB(sql);
 });
 
@@ -102,8 +109,20 @@ fil_reset.addEventListener('click', () => {
 sort_item.forEach(s_item => {
     s_item.addEventListener('click', () => {
         sql_memory.sort = s_item.dataset.value;
-        sql = `SELECT name_alpha FROM char_info WHERE ${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
-        // console.log(sql);
+        select = `name_alpha,${sql_memory.sort} AS caption`;
+        from = `char_info`;
+        where = `${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
+
+        if (s_item.classList.contains('join')) {
+            select = `name_alpha,joinTable.name AS caption`;
+            from = `char_info INNER JOIN ${sql_memory.sort}_tb AS joinTable ON ${sql_memory.sort} = joinTable.id`;
+
+            if (sql_memory.sort == 'town' || sql_memory.sort == 'outdoor' || sql_memory.sort == 'indoor') {
+                from = `char_info INNER JOIN aptitude_tb AS joinTable ON ${sql_memory.sort} = joinTable.id`;
+            }
+        }
+        sql = `SELECT ${select} FROM ${from} WHERE ${where}`;
+
         connect_DB(sql);
     });
 });
@@ -115,8 +134,12 @@ sort_reset.addEventListener('click', () => {
             sql_memory.sort = s_item.dataset.value;
         }
     });
-    sql = `SELECT name_alpha FROM char_info WHERE ${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
-    // console.log(sql);
+    select = `name_alpha,${sql_memory.sort} AS caption`;
+    from = `char_info`;
+    where = `${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
+
+    sql = `SELECT ${select} FROM ${from} WHERE ${where}`;
+
     connect_DB(sql);
 });
 
@@ -125,8 +148,9 @@ role_btn.forEach(r_btn => {
     r_btn.addEventListener('click', () => {
         let role_num = r_btn.dataset.value;
         role_num != 0 ? sql_memory.role = `role in (${role_num})` : sql_memory.role = 'role in (1,2)';
-        sql = `SELECT name_alpha FROM char_info WHERE ${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
-        // console.log(sql);
+
+        where = `${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
+        sql = `SELECT ${select} FROM ${from} WHERE ${where}`;
         connect_DB(sql);
     });
 });
@@ -141,6 +165,7 @@ ADtoggle_btn.addEventListener('click', () => {
         ADtoggle_btn.innerHTML = '<p class="centering">昇</p>';
         sql_memory.order = '';
     }
-    sql = `SELECT name_alpha FROM char_info WHERE ${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
+    where = `${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
+    sql = `SELECT ${select} FROM ${from} WHERE ${where}`;
     connect_DB(sql);
 });

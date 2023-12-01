@@ -29,8 +29,6 @@ article .description p {
     height: 625px;
     background-color: #c9d9f3;
     margin-bottom: 100px;
-    -webkit-user-select: none;
-    user-select: none;
 }
 
 /* 一覧ツールのヘッダー部の装飾 -------------------------*/
@@ -41,6 +39,8 @@ article .description p {
     width: 100%;
     height: var(--list_header_height);
     background-color: #5b84c4;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .list_header .content_container {
@@ -280,7 +280,7 @@ article .description p {
 .list_content_bg .caption {
     font-family: 'Kosugi Maru', sans-serif;
     color: #ffffff;
-    font-size: 17.5px;
+    font-size: 15px;
     background-color: #143E64;
     margin-top: 5px;
     padding: 5px 0;
