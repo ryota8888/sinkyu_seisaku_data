@@ -1,7 +1,7 @@
 <?php
 
 $dsn = 'mysql:host=localhost;dbname=bluearchive_database;charset=utf8';
-$user = 'read_select_only';
+$user = 'root';
 $pass = '';
 
 $pdo  = new PDO($dsn, $user, $pass);

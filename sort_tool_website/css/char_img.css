@@ -678,6 +678,10 @@
     background-image: url(../img/kiryu_kikyo.png);
 }
 
+.list_content_bg .izumimoto_eimi_winter {
+    background-image: url(../img/kiryu_kikyo.png);
+}
+
 /* 画像を消すcss */
 .list_content_bg .none {
     display: none;
