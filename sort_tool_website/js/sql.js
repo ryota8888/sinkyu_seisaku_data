@@ -32,7 +32,7 @@ let where = `${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.s
 let sql = `SELECT ${select} FROM ${from} WHERE ${where}`;
 
 const connect_DB = (data) => {
-    url = '../php/data_push.php';
+    url = '../../php/data_push.php';
     method_data = 'POST';
     c_type = 'application/json';
 
@@ -46,7 +46,7 @@ const connect_DB = (data) => {
             img_list.innerHTML = '';
             // console.log('--検索結果--');
             res.forEach(item => {
-                img_list.innerHTML += `<li><a href="character/${item.name_alpha}.html" class="char_img img_click ${item.name_alpha}"></a><p class="caption">${item.caption}</p></li>`;
+                img_list.innerHTML += `<li><a href="../character/${item.name_alpha}.html" class="char_img img_click ${item.name_alpha}"></a><p class="caption">${item.caption}</p></li>`;
             });
         })
         .catch(error => {

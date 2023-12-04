@@ -232,10 +232,11 @@ article .description p {
     font-size: 30px;
 }
 
-.list_content_bg ul .message_box .error_message a {
+.message_box .error_message a {
     -webkit-user-select: none;
     user-select: none;
     position: relative;
+    display: inline;
     top: -3px;
     font-family: 'Kosugi Maru', sans-serif;
     color: white;
@@ -248,12 +249,6 @@ article .description p {
     box-shadow: 1px 3px 4px 1.5px #7325125b;
     margin-right: 10px;
     transition: all 0.4s;
-}
-
-.message_box .error_message a ion-icon {
-    position: relative;
-    top: 2.5px;
-    padding-right: 2.5px;
 }
 
 .list_content_bg ul .message_box .error_message a:hover {
