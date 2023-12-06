@@ -282,6 +282,7 @@ article .description p {
     border-radius: 5px;
     text-align: center;
 }
+
 .caption.red {
     background-color: #cf1c1c;
 }
@@ -294,6 +295,7 @@ article .description p {
 .caption.purple {
     background-color: #7f24c6;
 }
+
 
 /* 中央寄せのcss */
 .centering {
