@@ -18,14 +18,14 @@ filID.forEach((id, index) => {
 
 const sql_memory = {
     role: 'role in (1,2)',
-    filter: '(rarity in(1,2,3)) AND (attack in(1,2,3,4)) AND (defense in(1,2,3,4)) AND (class in(1,2,3,4,5)) AND (position in(1,2,3)) AND (school in(1,2,3,4,5,6,7,8,9,10))',
+    filter: '(rarity in(1,2,3)) AND (attack in(1,2,3,4)) AND (defense in(1,2,3,4)) AND (class in(1,2,3,4,5)) AND (position in(1,2,3)) AND (school in(1,2,3,4,5,6,7,8,9,10,11))',
     sort: 'f_name',
     order: ''
 }
 const img_list = document.querySelector('.list_content_bg ul')
 const ADtoggle_btn = document.querySelector('.list_header .content_container .item4');
 
-let select = `name_alpha,${sql_memory.sort} AS caption`;
+let select = `name_alpha,f_name,${sql_memory.sort} AS caption`;
 let from = `char_info`;
 let where = `${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort}`;
 
@@ -46,7 +46,7 @@ const connect_DB = (data) => {
             img_list.innerHTML = '';
             // console.log('--検索結果--');
             res.forEach(item => {
-                img_list.innerHTML += `<li><a href="../character/${item.name_alpha}.html" class="char_img img_click ${item.name_alpha}"></a><p class="caption">${item.caption}</p></li>`;
+                img_list.innerHTML += `<li><a href="https://bluearchive.wikiru.jp/?${item.f_name}" target="_blank" rel="noreferrer noopener" class="char_img img_click ${item.name_alpha}"></a><p class="caption">${item.caption}</p></li>`;
             });
         })
         .catch(error => {
@@ -109,12 +109,12 @@ fil_reset.addEventListener('click', () => {
 sort_item.forEach(s_item => {
     s_item.addEventListener('click', () => {
         sql_memory.sort = s_item.dataset.value;
-        select = `name_alpha,${sql_memory.sort} AS caption`;
+        select = `name_alpha,f_name,${sql_memory.sort} AS caption`;
         from = `char_info`;
         where = `${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
 
         if (s_item.classList.contains('join')) {
-            select = `name_alpha,joinTable.name AS caption`;
+            select = `name_alpha,f_name,joinTable.name AS caption`;
             from = `char_info INNER JOIN ${sql_memory.sort}_tb AS joinTable ON ${sql_memory.sort} = joinTable.id`;
 
             if (sql_memory.sort == 'town' || sql_memory.sort == 'outdoor' || sql_memory.sort == 'indoor') {
@@ -122,7 +122,7 @@ sort_item.forEach(s_item => {
             }
         }
         sql = `SELECT ${select} FROM ${from} WHERE ${where}`;
-
+        console.log(sql);
         connect_DB(sql);
     });
 });
@@ -134,7 +134,7 @@ sort_reset.addEventListener('click', () => {
             sql_memory.sort = s_item.dataset.value;
         }
     });
-    select = `name_alpha,${sql_memory.sort} AS caption`;
+    select = `name_alpha,f_name,${sql_memory.sort} AS caption`;
     from = `char_info`;
     where = `${sql_memory.role} AND ${sql_memory.filter} ORDER BY ${sql_memory.sort} ${sql_memory.order}`;
 
